@@ -1,4 +1,14 @@
 <p>
   estados works!
 </p>
-<button mat-button (click)="mensaje('hola mundo')">Click me!</button>
+<button mat-raised-button color="primary" (click)="mensaje('hola mundo')">Click me!</button>
+
+<form class="example-form">
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="Favorite food" value="Sushi">
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width">
+    <textarea matInput placeholder="Leave a comment"></textarea>
+  </mat-form-field>
+</form>
