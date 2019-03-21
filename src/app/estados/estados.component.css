@@ -1,0 +1,42 @@
+.panel1 {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+  right: 100;
+  position: absolute; 
+  top: 5%;
+  left: 10%;
+}
+
+.contenedorTabla {
+  height: 600px;
+  overflow: auto;
+  position: absolute;
+  top: 15%;
+}
+
+table {
+  width: 1900px;
+}
+
+.inputPlanilla {
+  width: 25%;
+}
+
+.panel2{
+  position: absolute; 
+  top: 80%;
+  left: 10%;
+}
+
+.aprRev{
+  left: 20%;
+}
+
+tr.mat-footer-row {
+  font-weight: bold;
+}
+
+.mat-table-sticky {
+  border-top: 1px solid #e0e0e0;
+}
