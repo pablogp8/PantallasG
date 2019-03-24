@@ -1,69 +1,54 @@
-<div class="OFICIO">
-  <div class="encab1">
-    <div class="D11">
-      UNIVERSIDAD DE SAN CARLOS DE GUATEMALA
-      <br>PLAN DE PRESTACIONES
-    </div>
-    <div class="D12">
-      PÁGINA: 1
-      <br>FORMA: PP-05-11
-    </div>
+
+<div class="ENCABEZADO1">
+  <img  style="float:left; margin:10px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Usac_logo.png/250px-Usac_logo.png" alt="logo usac" class="logo" >
+  <div> <br>
+    <div class="enc1">PLAN DE PRESTACIONES</div>
+    <div class="enc1">UNIVERSIDAD DE SAN CARLOS DE GUATEMALA</div>
+    <div class="enc1">CUENTA CORRIENTE</div>
+    
+  </div>  
+
+    <div class = "TitTabA"><h2>TABLA DE AMORTIZACIONES</h2></div>
+</div>
+
+<div class="ENCABEZADO2">
+    <div class="letTam letColor ">{{nombre}}</div><br>
+    <div class="letTam">RegistroPersonal: <label class="letColor">{{regPersonal}}</label> </div>
+</div>
+
+<div class="ENCABEZADO3">
+  <div class="letTam">Monto Original: <label class="letColor">{{montoOriginal | currency:"Q "}} </label> </div>
+  <div class="letTam">
+      <label class="posTasa">Tasa de Interes: <label class="letColor">{{tasaInteres}}% </label> </label>
+      <label class="posPlazo">Plazo: <label class="letColor">{{plazo}} </label> </label>
+      <label class="posCuota">Cuota Nivelada: <label class="letColor">{{cuota | currency:"Q "}} </label> </label>
   </div>
-  <div class="encab2">
-    PLANILLA DE TRAMITE No. ***7***
-    <br>CHEQUES PARA REVISIÓN:
-    <br>GUATEMALA, 19 DE FEBRERO DE 2019
-  </div>
-  <div class="encab3">
-    "PRESTAMOS INMEDIATOS"
-  </div>
+  
+</div>
+
+<div class="TABLA">
   <div class="cuerpo">
+      <div class="encabezadoTabla">
+          <div class="nombre bordTit">CIFRAS EN QUETZALES</div>
+      </div>
     <div class="titulos">
-      <div class="no bordT">No.</div>
-      <div class="registro bordT">REGISTRO No.</div>
-      <div class="solicitud bordT">SOLICITUD No.</div>
-      <div class="nombre bordT">NOMBRE DEL SOLICITANTE</div>
-      <div class="contrato bordT">CONTRATO No.</div>
-      <div class="cheque bordT">CHEQUE No.</div>
-      <div class="dependencia bordT">DEPENDENCIA O FACULTAD</div>
-      <div class="liquido bordT">LIQUIDO</div>
-      <div class="Master">
-        <div class="subT bordT">
-          JAPP
-        </div>
-        <div class="firmaT bordT">
-          FIRMA
-        </div>
-        <div class="fecha bordT">
-          FECHA
-        </div>
-      </div>
-      <div class="Master">
-        <div class="subT bordT">
-          PAGADOR
-        </div>
-        <div class="recibido bordT">
-          RECIBIDO
-        </div>
-        <div class="fecha bordT">
-          FECHA
-        </div>
-      </div>
-      <div class="Master">
-        <div class="subT bordT">
-          ARCHIVO
-        </div>
-        <div class="recibido bordT">
-          RECIBIDO
-        </div>
-        <div class="fecha bordT">
-          FECHA
-        </div>
-      </div>
+      <div class="unaLinea bordT">No.</div>
+      <div class="unaLinea bordT">MES DE PAGO</div>
+      <div class="unaLinea bordT">ABONO A INTERES</div>
+      <div class="dosLineas bordT">ABONO A CAPITAL</div>
+      <div class="unaLinea bordT">VALOR CUOTA</div>
+      <div class="unaLinea bordT">SALDO ACTUAL</div>
+      <div class="dosLineas bordT">SEGURO CREDITO</div>
+      <div class="dosLineas bordT">SEGURO SIN IVA</div>
+      <div class="unaLinea bordT">IVA SEGURO</div>
+      <div class="unaLinea bordT">APLICADO</div>
+
     </div>
+
+
     <div class="detalle" >
       <div class="filaD"*ngFor="let filaL of listaDU; let i=index" >
-        <div class="nof bordTF">{{i+1}}</div>
+        <div class="bordTF">{{i+1}}</div>
         <div class="registrof bordTF"> {{filaL.detalle.registro}}</div>
         <div class="solicitudf bordTF">{{filaL.detalle.solicitud}}</div>
         <div class="nombref bordTF">{{filaL.detalle.nombre}}</div>
@@ -73,15 +58,11 @@
         <div class="liquidof bordTF">Q {{filaL.detalle.liquido}}</div>
         <div class="firmaTf bordTF"></div>
         <div class="fechaf bordTF"></div>
-        <div class="recibidof bordTF"></div>
-        <div class="fechaf bordTF"></div>
-        <div class="recibidof bordTF"></div>
-        <div class="fechaf bordTF"></div>
       </div>
     </div>
   </div>
-  <div class="firma">
-    _______________________________
-    <br>Firma y Sello
-  </div>
+
+
 </div>
+
+

@@ -12,7 +12,7 @@ export class EjemplopComponent implements OnInit {
     {detalle:{
       registro:'025',
       solicitud: '18',
-      nombre: 'Maria del Rosario Ramirez',
+      nombre: 'Maria',
       contrato: '0027',
       cheque: '24715',
       dependencia: 'Ingenieria',
@@ -21,7 +21,7 @@ export class EjemplopComponent implements OnInit {
     detalle:{
       registro:'026',
       solicitud: '19',
-      nombre: 'Luis Angel Marroquin',
+      nombre: 'Luis',
       contrato: '0028',
       cheque: '24716',
       dependencia: 'Farmacia',
@@ -30,15 +30,24 @@ export class EjemplopComponent implements OnInit {
       detalle:{
         registro:'027',
         solicitud: '20',
-        nombre: 'Mariana Gonzales Garcia',
+        nombre: 'Mariana',
         contrato: '0029',
         cheque: '24717',
-        dependencia: 'Plan de prestaciones',
+        dependencia: 'Plan',
         liquido: '15,000.00',
       }},
   ];
 
+  
+
   constructor() { }
+
+  nombre = "LUIS RENE ALVAREZ CALI";
+  regPersonal = 50507;
+  montoOriginal = 10000;
+  tasaInteres = 10.92;
+  plazo = 24;
+  cuota = 465.71;
 
   ngOnInit() {
   }

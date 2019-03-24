@@ -1,70 +1,116 @@
-.OFICIO{
-    width: 32cm;
-    height: 19.6cm;
-    margin: 1cm 0cm 1cm 1cm; 
+.logo{
+    width: 2.5cm;
+    height: 2.5cm;     
 }
-.encab1{
-    display: grid;
-    grid-template-columns: 28cm 4cm;
+.enc1{
+    margin: 0cm 0cm 0.1cm 1cm;
+    height: 0.5cm;
+    
 }
-
-.encab3{
-    width: 32cm;
+.linEnc{
+    height: 1cm;
+}
+.ENCABEZADO1{
+    width: 25cm;
+    height: 3.5cm;
+    margin: 1cm 0cm 1cm 1cm;
+    font:  bold 16px/14px Arial, serif;
+}   
+.TitTabA{
+    margin: 1cm 0cm 1cm 9.5cm;
+}
+.ENCABEZADO2{
+    width: 28cm;
+    top: 0cm;
     text-align: center;
     font:  bold 16px/14px Arial, serif;
-    margin-bottom: 0.5cm;
-    margin-top: 0.5cm;
+    margin: 1cm 0cm 1cm 1cm;  
 }
-.firma{
-    width: 32cm;
-    text-align: center;
-    margin-top: 0.5cm
+.ENCABEZADO3{
+    width: 28cm;
+    height: 1cm;
+    margin: 1cm 1cm 1cm 1cm; 
+}
+.letColor{
+    color: cornflowerblue;
+}
+.letTam{
+    font:  bold 18px/16px Arial, serif;
+    height: 0.75cm;
+}
+.posTasa{
+    margin: 1cm 0cm 1cm 0cm
+}
+.posPlazo{
+    margin: 1cm 0cm 1cm 7cm
+}
+.posCuota{
+    margin: 1cm 0cm 1cm 5cm;
+}
+
+
+
+.TABLA{
+    width: 28cm;
+    height: 28cm;
+    margin: 1cm 0cm 1cm 1cm;
 }
 .titulos{
     display: grid;
-    grid-template-columns: 0.7cm 1.7cm 1.7cm 6.8cm 1.7cm 1.6cm 4.9cm 2.4cm 3.2cm 3.2cm 3.2cm;
-    font:  bold 11px/14px Arial, serif;
+    grid-template-columns: 0.7cm 4.5cm 3.8cm 2.6cm 3.2cm 3.2cm 2.5cm 2.5cm 2.5cm 2.5cm;
+    font:  bold 12px/14px Arial, serif;
     text-align: center;
-    border-left: 0.3mm solid;
-}
-.Master{
-    display: grid;
-    grid-template-columns: 1.6cm 1.6cm;
-    grid-template-rows: 0.6cm 0.6cm;
+    border-left: 0.4mm solid;
 }
 
+.encabezadoTabla{
+    display: grid;
+    grid-template-columns: 28cm;
+    font:  bold 14px/14px Arial, serif;
+    text-align: center;
+    border-left: 0.4mm solid;
+}
+.bordTit{
+    border-right: 0.4mm solid;
+    border-top: 0.4mm solid;
+    border-bottom: 0mm solid;
+    padding-top: 0cm;
+}
+.filaD{
+    display: grid;
+    grid-template-columns: 0.7cm 4.5cm 3.8cm 2.6cm 3.2cm 3.2cm 2.5cm 2.5cm 2.5cm 2.5cm;
+    font: 11px/14px , serif;
+    /*text-align: center;*/
+    border-left: 0.4mm solid;
+}
 
 .bordT{
-    border-right: 0.3mm solid;
-    border-top: 0.3mm solid;
-    border-bottom: 0.3mm solid;
+    border-right: 0.4mm solid;
+    border-top: 0.4mm solid;
+    border-bottom: 0.4mm solid;
     padding-top: 0.2cm;
 }
 
 .bordTF{
-    border-right: 0.3mm solid;
-    border-bottom: 0.3mm solid;
+    border-right: 0.4mm solid;
+    border-bottom: 0.4mm solid;
     text-align: center;
     padding-top: 0.1cm;
 }
-.subT{
-    grid-column:1/3;
-    border-bottom: 0mm solid;
-    padding-top: 0.1cm;
+
+.nombre{
+    padding-top: 0.10cm;
 }
-.nombre, .dependencia, .liquido{
+.unaLinea{
     padding-top: 0.35cm;
+}
+.dosLineas{
+    padding-top: 0.20cm;
 }
 .detalle{
     height: 13cm;
 }
-.filaD{
-    display: grid;
-    grid-template-columns: 0.7cm 1.7cm 1.7cm 6.8cm 1.7cm 1.6cm 4.9cm 2.4cm 1.6cm 1.6cm 1.6cm 1.6cm 1.6cm 1.6cm;
-    font:  bold 11px/14px Arial, serif;
-    /*text-align: center;*/
-    border-left: 0.3mm solid;
-}
+
 .nombref, .dependenciaf{
     text-align: left;
     padding-left: 0.1cm;
@@ -72,3 +118,13 @@
 .fecha, .recibido, .firmaT{
     padding-top: 0.1cm
 }
+
+.nombref, .dependenciaf{
+    text-align: left;
+    padding-left: 0.1cm;
+}
+
+
+
+
+
