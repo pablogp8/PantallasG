@@ -1,11 +1,15 @@
+import {A11yModule} from '@angular/cdk/a11y';
+import {MatNativeDateModule} from '@angular/material';
+
+//probando import para el dialog 
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import {CdkTableModule} from '@angular/cdk/table';
 import { EstadosComponent } from './estados/estados.component';
-import {MatButtonModule, MatCheckboxModule,MatInputModule,MatSelectModule,MatDividerModule,MatListModule,MatTableModule,MatIconModule,MatMenuModule} from '@angular/material';
-import { OrdenpagoComponent } from './ordenpago/ordenpago.component';
+import {MatButtonModule, MatCheckboxModule,MatInputModule,MatSelectModule,MatDividerModule,MatListModule,MatTableModule,MatIconModule,MatMenuModule,MatDialogModule} from '@angular/material';
+import { OrdenpagoComponent,DialogOverviewExampleDialog } from './ordenpago/ordenpago.component';
 import {NoopAnimationsModule} from '@angular/platform-browser/animations';
 import 'hammerjs';
 
@@ -14,7 +18,9 @@ import 'hammerjs';
   declarations: [
     AppComponent,
     EstadosComponent,
-    OrdenpagoComponent
+    OrdenpagoComponent,
+    DialogOverviewExampleDialog
+    
   ],
   imports: [
   BrowserModule,
@@ -28,9 +34,10 @@ import 'hammerjs';
   MatTableModule,
   MatIconModule,
   MatMenuModule,
- 
-  
+  MatDialogModule,
+
   ],
+  entryComponents: [DialogOverviewExampleDialog],
   providers: [],
   bootstrap: [AppComponent]
 })
